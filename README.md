@@ -1,6 +1,6 @@
 # Project 8 - Pentesting Live Targets
 
-Time spent: 6 hours spent in total
+Time spent: 8 hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -55,6 +55,14 @@ Vulnerability #2: Cross-Site Request Forgery
 https://user-images.githubusercontent.com/21267287/32184754-a22d2848-bd73-11e7-9534-5d68f50a9bdc.gif
 
 When trying to edit the information after changing the csrd_token, red section is still able to make a change, while the other two sections show "Error: invalid request".
+
+
+## Bonus Objective 2: Build on Objective #4 (Cross-Site Scripting)
+
+https://user-images.githubusercontent.com/21267287/32192064-781b0bb8-bd89-11e7-891a-5476b45c62d4.gif
+
+In green section, type in <script>document.location="https://www.google.com"</script> in Feedback in Contact Us, then go to the feedback section in Staff Menu, it should direct the page to google. Additionally, type in <script>alert(document.cookie)</script> may read the cookie data and type in <script>document.cookie="username=abcde"</script> may set the cookie data.
+
 
 ## Notes
 
