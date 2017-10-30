@@ -52,9 +52,9 @@ In the Salesperson section https://104.198.200.7/red/public/salesperson.php?id=X
 
 Vulnerability #2: Cross-Site Request Forgery
 
-https://user-images.githubusercontent.com/21267287/32150106-68778b6e-bce4-11e7-9a26-0315f862e66c.gif
+https://user-images.githubusercontent.com/21267287/32184754-a22d2848-bd73-11e7-9534-5d68f50a9bdc.gif
 
-In the Contact Us section, inserting a link which containing a form that changes some information. 
+When trying to edit the information after changing the csrd_token, red section is still able to make a change, while the other two sections show "Error: invalid request".
 
 ## Notes
 
